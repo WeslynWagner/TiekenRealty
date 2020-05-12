@@ -12,20 +12,22 @@
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
   <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
   <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Homes</a>
+  <a href="#" class="w3-bar-item w3-button">Rentals</a>
+  <a href="#" class="w3-bar-item w3-button">Land</a>
+  <a href="#" class="w3-bar-item w3-button">Contact Infortmation</a>
 </nav>
 
 <!-- Header -->
 <header class="w3-container w3-theme w3-padding" id="myHeader">
   <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
   <div class="w3-center">
-  <h4>BEAUTIFUL RESPONSIVE WEB SITES</h4>
-  <h1 class="w3-xxxlarge w3-animate-bottom">TIEKEN HOMES</h1>
+  <h4>BEAUTIFUL HOMES FOR YOU</h4>
+  <h1 class="w3-xxxlarge w3-animate-bottom">TIEKEN REALTY</h1>
     <div class="w3-padding-32">
-      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
+      <button class="w3-btn w3-large w3-dark-grey w3-hover-light-grey" 
+        onclick="document.getElementById('id01').style.display='block'" 
+        style="font-weight:900;">PAY THE WAGNERS COMMISSION</button>
     </div>
   </div>
 </header>
@@ -52,38 +54,39 @@
 <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Responsive</h3><br>
+  <h3>Homes</h3><br>
   <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Built-in responsiveness</p>
-  <p>Mobile first fluid grid</p>
-  <p>Fits any screen sizes</p>
-  <p>PC Tablet and Mobile</p>
+  <p>Write some fun facts about houses here</p>
+  <label for="exampleFormControlInput1">Find a home near:</label>
+  <input type="locationSearch" placeholder="Enter City or Zip Code">
+  <button class="w3-btn w3-small w3-dark-grey w3-hover-light-grey" 
+  onclick="document.getElementById('id02').style.display='block'" 
+  style="font-weight:800;">Find my home!</button>  
+  <p>Wussssup, Annat was here</p>
   </div>
 </div>
 
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Standard CSS</h3><br>
+  <h3>Rentals</h3><br>
   <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Standard CSS only</p>
-  <p>Easy to learn</p>
-  <p>No need for jQuery</p>
-  <p>No JavaScript library</p>
+  <p>Write some rental facts</p>
+  <p>Idk put something else here</p>
+  <p>And some more stuffs</p>
   </div>
 </div>
 
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Design</h3><br>
+  <h3>Land</h3><br>
   <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Paper like design</p>
-  <p>Bold colors and shadows</p>
-  <p>Equal across platforms</p>
-  <p>Equal across devices</p>
+  <p>Land fun facts</p>
+  <p>Annat wants some land too</p>
+  <p>I wish land wasn't so expensive</p>
   </div>
 </div>
 </div>
-
+<!--  
 <div class="w3-container">
 <hr>
 <div class="w3-center">
@@ -311,10 +314,10 @@
 </div>
 
 <div class="w3-row-padding">
-
-<div class="w3-half">
+-->
+<div class="w3-full">
 <form class="w3-container w3-card-4">
-  <h2>Input Form</h2>
+  <h2>Contact Me</h2>
   <div class="w3-section">      
     <input class="w3-input" type="text" required>
     <label>Name</label>
@@ -329,31 +332,36 @@
   </div>
 
   <div class="w3-row">
-  <div class="w3-half">
-    <input id="milk" class="w3-check" type="checkbox" checked="checked">
-    <label>Milk</label>
+  <div class="w3-full">
+    <input id="Home" class="w3-check" type="checkbox" checked="checked">
+    <label>Home</label>
     <br>
-    <input id="sugar" class="w3-check" type="checkbox">
-    <label>Sugar</label>
+    <input id="Rental" class="w3-check" type="checkbox">
+    <label>Rental</label>
     <br>
-    <input id="lemon" class="w3-check" type="checkbox" disabled>
-    <label>Lemon (Disabled)</label>
+    <input id="Land" class="w3-check" type="checkbox" >
+    <label>Land</label>
     <br><br>
   </div>
 
   <div class="w3-half">
-    <input id="male" class="w3-radio" type="radio" name="gender" value="male" checked>
-    <label>Male</label>
+    <input id="single" class="w3-radio" type="radio" name="gender" value="male" checked>
+    <label>single</label>
     <br>
-    <input id="female" class="w3-radio" type="radio" name="gender" value="female">
-    <label>Female</label>
+    <input id="family" class="w3-radio" type="radio" name="gender" value="female">
+    <label>family</label>
     <br>
-    <input id="unknown" class="w3-radio" type="radio" name="gender" value="" disabled>
-    <label> Don't know (Disabled)</label>
+    <input id="unknown" class="w3-radio" type="radio" name="gender" value="">
+    <label> Don't know </label>
   </div>
+  <button class="w3-btn w3-small w3-dark-grey w3-hover-light-grey" 
+  onclick="document.getElementById('id02').style.display='block'" 
+  style="font-weight:800;">Contact Trey!</button>  
   </div>
 </form>
 </div>
+
+<!-- 
 <div class="w3-half">
 <div class="w3-card-4 w3-container">
 <h2>Lists</h2>
@@ -496,7 +504,6 @@
 <hr>
 <div class="w3-center">
   <h2>Pagination</h2>
-  <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
       <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
@@ -509,19 +516,21 @@
     </div>
   </div>
 </div>
-<br>
+-->
 
-<!-- Footer -->
+<!--  
+<br>
 <footer class="w3-container w3-theme-dark w3-padding-16">
   <h3>Footer</h3>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
     <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
-  <p>Remember to check out our  <a href="w3css_references.asp" class="w3-btn w3-theme-light" target="_blank">W3.CSS Reference</a></p>
+  <p>Remember to check out our  <a href="w3css_references.asp" class="w3-btn w3-theme-light" target="_blank">W3.CSS Reference</a></p>
 </footer>
+-->
 
 <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
 <script>
